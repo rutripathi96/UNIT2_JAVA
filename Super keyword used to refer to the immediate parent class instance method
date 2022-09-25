@@ -1,0 +1,22 @@
+//Super keyword used to refer to the immediate parent class instance method 
+
+class Animal{
+	void eating() {
+		System.out.println("Eating");
+	}
+}
+class Cow extends Animal{
+	void eating() {
+		System.out.println("Eating grass");
+	}
+	public void fun() {
+		super.eating();
+		eating();
+	}
+}
+public class G2{
+	public static void main(String[] args) {
+		Cow obj = new Cow();
+		obj.fun();
+	}
+}
