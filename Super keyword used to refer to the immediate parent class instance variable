@@ -1,0 +1,30 @@
+//Super keyword used to refer to the immediate parent class instance variable 
+
+class Animal{
+	int eat_biscuits = 23;
+	public void sleep() {
+		System.out.println("Sleeping");
+	}
+}
+class Dog extends Animal{
+	int eat_biscuits = 50;
+	public void bark() {
+		System.out.println("Barking");
+	}
+	public void fun() {
+		
+		System.out.println(eat_biscuits); 
+		System.out.println(super.eat_biscuits); 
+	}
+	
+}
+public class G2{
+	public static void main(String[] args) {
+		Dog obj = new Dog();
+		obj.fun();
+		obj.bark();
+	}
+}
+
+
+//super should come inside the method or the constructor in the child class
