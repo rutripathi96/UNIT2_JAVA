@@ -1,0 +1,26 @@
+//Run time polymorphism
+
+class RBI{
+	public double rOI(){
+		return 0;
+	}
+}
+class AXIS extends RBI{
+	public double rOI() {
+		return 5.5;
+	}
+}
+class ICICI extends RBI{
+	public double rOI() {
+		return 7.8;
+	}
+}
+public class G2{
+	public static void main(String[] args) {
+		RBI obj;
+		obj = new AXIS();
+		System.out.println(obj.rOI());
+		obj = new ICICI();
+		System.out.println(obj.rOI());
+	}
+}
