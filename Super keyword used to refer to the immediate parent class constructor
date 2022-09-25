@@ -1,0 +1,18 @@
+//Super keyword used to refer to the immediate parent class constructor
+
+class Animal{
+	public Animal(){
+		System.out.println("Existing");
+	}
+}
+class Cow extends Animal{
+	public Cow() {
+		super();
+		System.out.println("More than 10 Million");
+	}
+}
+public class G2{
+	public static void main(String[] args) {
+		Cow obj = new Cow();
+	}
+}
