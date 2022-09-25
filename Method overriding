@@ -1,0 +1,25 @@
+//Method overriding
+
+class RBI{
+	public double rOI() {
+		return 0;
+	}
+}
+class ICICI extends RBI{
+	public double rOI() {
+		return 5;
+	}
+}
+class AXIS extends RBI{
+	public double rOI() {
+		return 9.4;
+	}
+}
+public class G1{
+	public static void main(String[] args) {
+		AXIS ax = new AXIS();
+		ICICI ic = new ICICI();
+		System.out.println(ax.rOI());
+		System.out.println(ic.rOI());
+	}
+}
